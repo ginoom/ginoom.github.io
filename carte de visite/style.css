@@ -1,0 +1,247 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body{
+    background-color: rgb(28, 29, 30);
+    min-height: 100vh;
+    overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+header
+{
+  background-color: #4A4860;
+  padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size:larger;
+  }
+
+.texte{
+  color:wheat;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    
+  }
+
+  .texte{
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+
+  .accueil-introduction h1 {
+    margin-bottom: 10px;
+    font-size:3pc;
+
+  }
+  
+  .accueil-introduction P {
+    margin-bottom: 10px;
+    font-size:1pc;
+    line-height: 1.5;
+
+  }
+
+  
+  .accueil-introduction h1,p {
+    padding-right: 100px;
+    
+  }
+
+
+.card{
+    width: 300px;
+    height: auto;
+    perspective: 1000px;
+}
+
+.content-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+    
+}
+
+.content-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+
+
+.cta {
+  display:inline-block;
+  background: #d5620a;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 55px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 80px;
+  left: 35px;
+}
+
+.cta:hover {
+  color: black;
+  text-decoration: none;
+
+}
+
+.resaux {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  position: absolute;
+  bottom: 130px;
+  left: 25px;
+}
+
+.resaux img {
+  width: 39px;
+  border-radius: 50%;
+  margin-left: 20px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.linkedin img:hover {
+  content: url('LinkedIn-logo-orange2.png');
+}
+
+.github img:hover {
+  content: url('icone-github-orange2.png');
+}
+
+.cv img:hover {
+  content: url('cv2.png');
+}
+
+
+.lm img:hover {
+  content: url('lm2.png');
+}
+
+
+
+.glow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: all 0.15s ease-out;
+    border-radius: 25px;
+    mix-blend-mode: hard-light;
+    background: radial-gradient(circle at 50% 0%, rgb(184,196,211),transparent );
+}
+
+
+#image-container {
+  display: none;
+  position: fixed;
+  top: 400;
+  right: 0;
+  width: 450px;
+  height: auto;
+  z-index: 999;
+}
+
+#image-container img{
+
+  max-width : 350px;
+  max-height : 1500px;
+}
+
+.led-bar-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.led-bar {
+  width: 20px;
+  height: 60px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 29px solid #6c1aff;
+  box-shadow: 0 0 10px #6c1aff;
+  animation: led-bar-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes led-bar-animation {
+  0% {
+    height: 100px;
+    box-shadow: 0 0 10px #6c1aff;
+  }
+  50% {
+    height: 80px;
+    box-shadow: 0 0 20px #6c1aff;
+  }
+  100% {
+    height: 60px;
+    box-shadow: 0 0 10px #6c1aff;
+  }
+}
+
+.mot {
+  display: inline-block;
+  position: relative;
+  color: #000;
+}
+
+.mot:hover {
+  color: #fff;
+}
+
+
+
+
+
+
