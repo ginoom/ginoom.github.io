@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gino Omerovic — Portfolio</title>
+    <meta name="description" content="Portfolio de Gino Omerovic, développeur web Full Stack junior." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Subtle background particles -->
+    <div class="bg-decoration">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <header>
+      <nav>
+        <a href="index.html" class="nav-logo">
+          Gino<span class="accent">.</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello World !</p>
+          <h1>Ma <span class="accent">carte</span> de visite</h1>
+          <p class="hero-description">
+            Je suis un développeur web <strong>Full Stack junior</strong>,
+            actuellement à la recherche d'une alternance pour mes études.
+            Voici ma carte avec différentes informations sur moi !
+          </p>
+          <div class="hero-badges">
+            <span class="badge">HTML / CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Full Stack</span>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="content-card">
+              <img src="carte.png" alt="Carte Pokémon de Gino" />
+            </div>
+            <div class="glow"></div>
+            <div class="card-bottom">
+              <div class="reseaux">
+                <a class="linkedin" href="https://www.linkedin.com/in/gino-omerovic-101504234/" target="_blank" rel="noopener" title="LinkedIn">
+                  <img src="LinkedIn-logo-orange.png" alt="LinkedIn" />
+                </a>
+                <a class="github" href="https://github.com/ginoom" target="_blank" rel="noopener" title="GitHub">
+                  <img src="icone-github-orange.png" alt="GitHub" />
+                </a>
+                <a class="cv" href="CV BTS gino.pdf" target="_blank" rel="noopener" title="Mon CV">
+                  <img src="cv.png" alt="CV" />
+                </a>
+                <a class="lm" href="Lettre de motivation gino.pdf" target="_blank" rel="noopener" title="Lettre de motivation">
+                  <img src="lm.png" alt="Lettre de motivation" />
+                </a>
+              </div>
+              <button class="cta" id="btn-contact">ME CONTACTER</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal contact -->
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+          <button class="modal-close" id="modal-close" aria-label="Fermer">&times;</button>
+          <img src="info.png" alt="Informations de contact" />
+        </div>
+      </div>
+
+      <!-- LED bars removed -->
+    </main>
+
+    <script src="carte.js"></script>
+  </body>
+</html>
